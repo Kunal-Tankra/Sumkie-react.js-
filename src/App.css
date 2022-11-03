@@ -1,0 +1,1248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hubballi", cursive;
+  text-transform: capitalize;
+
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+span::selection {
+  background-color: transparent;
+}
+
+*::selection {
+  background-color: blanchedalmond;
+}
+
+
+
+/* top buy now style */
+.topBuyNow {
+  background: rgb(34, 34, 34);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 18px;
+  z-index: 100;
+}
+
+.topBuyNow img {
+  width: 153px;
+}
+
+.topBuyNow button,
+.cartContainer button {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+  height: 34px;
+  width: 95px;
+  border-radius: 5px;
+  background-color: #82b440;
+  box-shadow: 0px 2px #5b7e2d;
+  border-style: none;
+  cursor: pointer;
+  transition: .1s;
+}
+
+.topBuyNow button:active,
+.cartContainer button:active {
+  transform: translateY(1px);
+  box-shadow: 0px 0px;
+
+}
+
+/*  promocode*/
+.promoCode {
+  background-color: #ed0f0f;
+  color: rgb(255 255 255);
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
+  padding: 10px 0px;
+}
+
+/* navbar is here.. */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: white;
+  position: sticky;
+  z-index: 100;
+  transition: .6s;
+
+}
+
+/* navlist */
+.navlist {
+  margin: 0 20px;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.navlist li {
+
+  padding: 2.5% 0;
+
+}
+
+.navlist li a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding: 10px 13px;
+  font-size: 17px;
+  color: black;
+  letter-spacing: 0.3px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+/* hover effects */
+.navlist li a:hover {
+  color: white;
+
+}
+
+.navlist li a:hover::before {
+  left: 0;
+
+}
+
+.navlist li a::before {
+  content: '';
+  display: inline-block;
+  background-color: #f11c1c;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+  z-index: -1;
+}
+
+/* nav icons */
+.navIcons {
+  display: flex;
+  gap: 21px;
+  position: relative;
+
+}
+
+.navIcons span {
+  font-size: 28px;
+  color: black;
+  cursor: pointer;
+  transition: .2s;
+  position: relative;
+}
+
+/* hover effect  */
+.navIcons span:hover {
+  color: #f11c1c;
+}
+
+span.cartNum {
+  color: #f11c1c;
+  font-size: 14px;
+  font-weight: 900;
+  position: absolute;
+  left: 81%;
+  transition: .2s;
+}
+
+span.cartNum.changeFontSize {
+  font-size: 20px;
+}
+
+/* search box after click on search icon */
+.searchBox {
+  width: 245px;
+  height: 40px;
+  border: solid rgb(204, 201, 201) 2px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  transform-origin: right top;
+  position: absolute;
+  right: 83%;
+  top: 150%;
+  overflow: hidden;
+}
+
+.searchBox input {
+  border: transparent;
+  outline: none;
+  height: 100%;
+  width: 215px;
+  margin-left: 10px;
+}
+
+/* top slider is starting here */
+.slick-slider {
+  overflow: hidden;
+}
+
+.topSlider {
+  overflow: hidden;
+  position: relative;
+
+}
+
+/* class(handleStyleTS) for style  */
+div.handleStyleTS {
+  transition: .3s;
+
+}
+
+.slick-slider:hover .TSArrowL {
+  opacity: 1;
+  left: 3%;
+}
+
+.slick-slider:hover .TSArrowR {
+  opacity: 1;
+  right: 3%;
+}
+
+.slick-slider .TSArrowL,
+.slick-slider .TSArrowR {
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  z-index: 1;
+}
+
+.slick-slider .TSArrowL {
+  left: -1%;
+}
+
+.slick-slider .TSArrowR {
+  right: -1%;
+}
+
+.slick-slider .TSArrowL:hover,
+.slick-slider .TSArrowR:hover {
+  color: #ed0f0f;
+}
+
+.topImg {
+  width: 100%;
+}
+
+/* heading container in top  slider */
+.headingContainer {
+  position: absolute;
+  top: 15%;
+  right: 9%;
+
+}
+
+.topSHeading {
+  position: relative;
+  left: 18%;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  transition: 0s;
+  transition-delay: .6s;
+
+}
+
+/* class(handleStyleTS) for style  */
+.slick-active .handleStyleTS .topSHeading {
+  transition: 0.9s;
+  transition-delay: 0.1s;
+  left: 0;
+}
+
+
+.topSDiscount {
+  position: relative;
+  left: 18%;
+  font-size: 1.4rem;
+  margin-top: 1.4rem;
+  margin-bottom: 4.3rem;
+  transition: 0s;
+  transition-delay: .6s;
+  opacity: 0;
+
+}
+
+/* class(handleStyleTS) for style  */
+.slick-active .handleStyleTS .topSDiscount {
+  left: 0;
+  opacity: 1;
+  transition: 0.9s;
+  transition-delay: 0.4s;
+}
+
+.headingContainer>button {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #ed0f0f;
+  border: none;
+  padding: .8rem 1.7rem;
+  font-size: 16px;
+  color: white;
+  overflow: hidden;
+  transform-origin: bottom;
+  transform: scaleY(0);
+}
+
+/* class(handleStyleTS) for style  */
+.slick-active div.handleStyleTS .headingContainer>button {
+
+  transition: 0.8s;
+  transition-delay: 0.6s;
+  transform: scaleY(1);
+}
+
+.headingContainer>button:hover::before {
+  top: -80%;
+  left: -48%;
+  opacity: 1;
+
+}
+
+.headingContainer>button::before {
+  content: '';
+  display: inline-block;
+  z-index: -1;
+  height: 105px;
+  width: 253px;
+  background-color: black;
+  position: absolute;
+  top: -193%;
+  left: 46%;
+  transform: rotate(20deg);
+  transition: 0.7s;
+  opacity: 0;
+}
+
+/* nav boxes in top slider */
+ul.slick-dots {
+  position: absolute;
+  bottom: 0.4%;
+
+}
+
+ul.slick-dots li {
+  cursor: default;
+}
+
+.slick-dots .navBoxesTS {
+  height: 12px;
+  width: 12px;
+  /* background-color: rgb(237, 15, 15); */
+  background-color: white;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.slick-active .navBoxesTS {
+  background-color: rgb(237, 15, 15);
+
+}
+
+/* banner for sale ... */
+.containerBnrForSale {
+  display: flex;
+  justify-content: space-between;
+  padding: 7% 3.7%;
+  gap: 32px;
+}
+
+.banner {
+  height: fit-content;
+}
+
+.banner:nth-child(2) {
+  margin-top: 7rem;
+}
+
+.BnrImg {
+  overflow: hidden;
+  height: 41.2rem;
+}
+
+.BnrImg img {
+  height: 100%;
+  transition: .7s;
+}
+
+.banner:hover .BnrImg img {
+  transform: scale(1.05);
+}
+
+.containerBnrForSale p {
+  margin-top: 20px;
+  font-size: 1.6rem;
+}
+
+.containerBnrForSale h2 {
+  margin-top: 10px;
+  font-size: 2.3rem;
+  margin-bottom: 38px;
+}
+
+.banner a {
+  text-transform: uppercase;
+  color: #ed0f0f;
+  text-decoration: none;
+  border-bottom: solid 2px #ed0f0f;
+  transition: .3s;
+}
+
+.banner a:hover {
+  color: black;
+  border-bottom: none;
+}
+
+/* companys logos */
+.logosContainer .slick-list {
+  border-top: rgba(184, 184, 184, 0.808) solid 1px;
+  border-bottom: rgba(184, 184, 184, 0.808) solid 1px;
+  padding: 6% 0;
+  margin: 0 4rem;
+}
+
+.logosContainer img {
+  width: 11.5rem !important;
+}
+
+.logosContainer a:hover img {
+  animation: logoAnimation 1.3s ease-in-out 1;
+
+}
+
+/* animatino of logos */
+@keyframes logoAnimation {
+  0% {
+    transform: scale(0.1);
+  }
+
+  20% {
+    transform: scale(1);
+  }
+
+  34% {
+    transform: scale(0.8);
+  }
+
+  51% {
+    transform: scale(1);
+  }
+
+  68% {
+    transform: scale(0.8);
+  }
+
+  92% {
+    transform: scale(1);
+  }
+}
+
+.slick-initialized .slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+/* arrows in logos  */
+.companysLogosArrowL,
+.companysLogosArrowR,
+.logosContainer .slick-prev {
+  all: unset;
+  border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  opacity: 1;
+  transition: .6s;
+}
+
+
+
+
+.companysLogosArrowL {
+  left: 1%;
+}
+
+.companysLogosArrowR {
+  right: 1%;
+}
+
+.logosContainer .slick-slider:hover button {
+  opacity: 1;
+}
+
+.companysLogosArrowL span,
+.companysLogosArrowR span {
+  font-size: 28px;
+  font-weight: 600;
+
+}
+
+/* new products... */
+.heading_N_P {
+  font-size: 2.4rem;
+  margin-top: 6%;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.heading_N_P::after {
+  content: '';
+  display: inline-block;
+  border-bottom: solid 2px #ed0f0f;
+  width: 2.6em;
+  position: absolute;
+  left: 50%;
+  bottom: -10%;
+  transform: translateX(-50%);
+}
+
+/* new product card... */
+.container_N_P {
+  margin: 40px 0 70px;
+}
+
+.imgs_N_P {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.discountPer {
+  background-color: #ed0f0f;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  padding: 1px 7px;
+  color: white;
+  font-size: 15px;
+}
+
+.discountPer::after {
+  content: '';
+  display: inline-block;
+  background-color: #ed0f0f;
+  width: 12px;
+  height: 10px;
+  position: absolute;
+  top: 94%;
+  left: 12%;
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+
+.hoverStyleImg {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  opacity: 0;
+  transition: .6s;
+}
+
+.container_N_P_Card:hover .hoverStyleImg {
+  opacity: 1;
+  left: 0;
+}
+
+.container_N_P .slick-list {
+  margin: 0 4rem;
+}
+
+
+
+.saleTag {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  background-color: #222;
+  padding: 1px 7px;
+  opacity: 0;
+  transition: 0.4s;
+  color: white;
+}
+
+.container_N_P_Card:hover .saleTag {
+  opacity: 1;
+}
+
+.icons_N_P {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 3%;
+  right: 2%;
+  gap: 9px;
+}
+
+.icons_N_P span {
+  color: black;
+  font-size: 20px;
+  font-weight: 100;
+  background-color: white;
+  cursor: pointer;
+  padding: 12px;
+  transform-origin: right;
+  transform: rotateY(90deg);
+  transition: transform .3s;
+}
+
+.container_N_P_Card:hover .icons_N_P span:nth-child(1) {
+  transition-property: transform;
+  transition-delay: .3s;
+}
+
+.container_N_P_Card:hover .icons_N_P span:nth-child(2) {
+  transition-property: transform;
+  transition-delay: .4s;
+}
+
+.container_N_P_Card:hover .icons_N_P span:nth-child(3) {
+  transition-property: transform;
+  transition-delay: .5s;
+}
+
+.container_N_P_Card:hover .icons_N_P span:nth-child(4) {
+  transition-property: transform;
+  transition-delay: .6s;
+}
+
+.container_N_P_Card:hover .icons_N_P span {
+  transform: rotateY(0deg);
+}
+
+.icons_N_P span:hover {
+  transition: color .2s !important;
+  color: #ed0f0f !important;
+}
+
+.ratingStars {
+  margin-top: 13px;
+  margin-bottom: 8px;
+  max-width: fit-content;
+}
+
+.ratingStars span {
+  color: #ccc;
+  font-size: 16px;
+  margin-right: .3px;
+}
+
+.ratingStars .yellowStar {
+  color: #ffb400;
+}
+
+.productName {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.productName:hover {
+  color: #ed0f0f;
+
+}
+
+.container_N_P_Card s {
+  margin-right: 13px;
+}
+
+.productPrice {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ed0f0f;
+}
+
+/* cart contaier */
+.cartContainer {
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.3rem;
+  position: relative;
+}
+
+.cartContainer h1 {
+  padding: 7px 10px;
+  border-radius: 10px;
+  font-family: monospace;
+  color: rgb(165 165 165);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.styleCartContainer {
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.cartContainer>button {
+  position: absolute;
+  top: 0%;
+  right: 3%;
+}
+
+.cartContainer>button:disabled {
+  opacity: .6;
+  transform: translateY(1px);
+  box-shadow: 0px 0px;
+  cursor: default;
+
+}
+
+/* offer banner */
+.offerBanner {
+  position: relative;
+  width: 92%;
+  margin: 0px auto;
+  overflow: hidden;
+  max-height: 25rem;
+}
+
+.offerBanner img {
+  width: 100%;
+}
+
+
+
+.offerBanner>h1 {
+  position: absolute;
+  top: 22%;
+  left: 60%;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+}
+
+.offerBanner>a {
+  text-transform: uppercase;
+  background-color: #ed0f0f;
+  position: absolute;
+  left: 60%;
+  top: 70%;
+  text-decoration: none;
+  color: white;
+  padding: 13px 21px;
+  transition: .6s;
+}
+
+.offerBanner a:hover {
+  background-color: black;
+}
+
+/* services part... */
+.services {
+  display: flex;
+  width: fit-content;
+  margin: auto;
+  padding: 80px 0;
+  border-bottom: solid 2px gainsboro;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-right: 2px solid gainsboro;
+  padding-left: 33px;
+  padding-right: 66px;
+  cursor: default;
+}
+
+.service:last-child {
+  border: none !important;
+}
+
+.service:hover .serviceLogo {
+  fill: #ed0f0f;
+}
+
+.service:hover .svgForService {
+  animation: logoAnimation 1.3s ease-in-out 1;
+}
+
+/* animation for services logos */
+@keyframes logoAnimation {
+
+  0% {
+    transform: scale(0.1);
+  }
+
+  20% {
+    transform: scale(1);
+  }
+
+  34% {
+    transform: scale(0.8);
+  }
+
+  51% {
+    transform: scale(1);
+  }
+
+  68% {
+    transform: scale(0.8);
+  }
+
+  92% {
+    transform: scale(1);
+  }
+}
+
+.servicetag h4 {
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+.service:hover h4 {
+  color: #ed0f0f;
+}
+
+
+
+.servicetag p {
+  color: #000;
+  font-weight: 100;
+}
+
+/* team container */
+.teamContainer {
+  background-color: #f5f4f2;
+  width: 92%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 55px 0px 47px;
+  margin-bottom: 100px;
+  position: relative;
+
+}
+
+.quotesInTeamBox {
+  width: 65px;
+}
+
+.aboutTeamContainer {
+
+  margin: 22px 12% 30px;
+}
+
+.aboutTeam {
+
+  color: rgb(121, 121, 121);
+  word-spacing: 2px;
+  line-height: 30px;
+  text-transform: initial;
+}
+
+/* team images slider */
+.TeamSliderContainer {
+  margin: auto auto;
+  width: 42rem;
+}
+
+.TeamSliderContainer .slick-track {
+  display: flex;
+  align-items: center;
+  height: 8rem;
+}
+
+
+
+.TeamSliderContainer .slick-slide img {
+  border-radius: 50%;
+  width: 70% !important;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.TeamSliderContainer .slick-slide.slick-center img {
+  width: 100% !important;
+  border: solid 3px #ed0f0f;
+}
+
+/* team name and post  */
+.namePostContainer {
+  margin-top: 15px;
+}
+
+.namePostContainer h5 {
+  color: #ed0f0f;
+  font-size: 16px;
+}
+
+.namePostContainer span {
+  color: rgb(129, 129, 129);
+}
+
+
+/* our blog is here.. */
+.containerOurBlog {
+  padding: 20px 0px 80px;
+  position: relative;
+}
+
+.containerOurBlog .slick-list {
+  margin: 0 4rem;
+}
+
+.containerOurBlog .slick-slide {
+  padding: 0 15px;
+}
+
+/* img container */
+.imageContainerBlog {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.imageContainerBlog::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: .1s;
+}
+
+.blogImageBox:hover .imageContainerBlog::after {
+  background-color: rgba(0, 0, 0, 0.315);
+}
+
+.imageContainerBlog img {
+  width: 100% !important;
+  transition: .7s;
+}
+
+.blogImageBox:hover .imageContainerBlog img {
+  transform: scale(1.1);
+}
+
+.showImages {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: .1s;
+  z-index: 1;
+}
+
+.blogImageBox:hover .showImages {
+  opacity: 1;
+}
+
+.showImages span {
+  border: solid white 2px;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  transition: .2s;
+  font-size: 20px;
+}
+
+.showImages span:hover {
+  background-color: #ed0f0f;
+  border-color: #ed0f0f;
+}
+
+.blogImageBox p {
+  color: #ed0f0f;
+  font-size: 16px;
+  font-weight: 100;
+  margin: 10px 0;
+}
+
+.blogImageBox a {
+  text-decoration: none;
+}
+
+.blogImageBox a:hover h4 {
+  color: #ed0f0f;
+}
+
+.blogImageBox h4 {
+  font-size: 16px;
+  color: #000;
+}
+
+/* after click on search in blog images  */
+.BlogImgsBg {
+  background-color: rgba(0, 0, 0, 0.795);
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  transition: .5s;
+}
+
+/* blog images slider */
+.blogImgsContainer {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  transition: .5s;
+  border: solid 4px white;
+  background-color: white;
+  border-radius: 4px;
+  height: 618px;
+}
+
+.left_B_I_C_Arrow,
+.right_B_I_C_Arrow {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+
+  color: white;
+  font-size: 90px;
+  font-weight: 100;
+  cursor: pointer;
+  text-shadow: 0px 0 13px rgb(49 49 49);
+  opacity: 0;
+  transition: .7s;
+  z-index: 100;
+}
+
+.left_B_I_C_Arrow:hover,
+.right_B_I_C_Arrow:hover {
+  opacity: 1;
+}
+
+.left_B_I_C_Arrow {
+  left: 0;
+
+}
+
+.right_B_I_C_Arrow {
+  right: 0;
+  justify-content: flex-end;
+
+
+}
+
+.blogImgsContainer img {
+  height: 100%;
+}
+
+.afterBlogImages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imageNumber {
+  margin-top: 5px;
+}
+
+.imageNumber h5 {
+  color: rgb(235, 235, 235);
+  font-size: 13px;
+  text-transform: none;
+  letter-spacing: .4px;
+  font-weight: 100;
+}
+
+.imageNumber p {
+  color: #999;
+  font-size: 13.5px;
+}
+
+.afterBlogImages .closeOfBlog {
+  font-size: 41px;
+  color: rgb(161, 161, 161);
+  cursor: pointer;
+}
+
+/* footer is here */
+.footer {
+  background-color: #222;
+  color: #fff;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 5%;
+  border-bottom: solid rgb(87, 87, 87) 1px;
+}
+
+.contacts>div h5 {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: .5px;
+  color: #fff;
+  margin-bottom: 44px;
+  position: relative;
+}
+
+.contacts>div h5::after {
+  content: '';
+  display: inline-block;
+  height: 2px;
+  width: 3.3em;
+  background-color: #ed0f0f;
+  position: absolute;
+  bottom: -48%;
+  left: 0;
+}
+
+/* contactInformation */
+.contactInformation>div {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.location {
+  padding-bottom: 25px;
+
+}
+
+
+.contactInformation>div span {
+  color: #fff;
+  font-weight: 100;
+  font-size: 23px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts p {
+  line-height: 30px;
+  width: 260px;
+  color: #cccccc;
+}
+
+/* all anchors */
+.footer a {
+  color: #cccccc;
+  transition: .2s;
+  text-decoration: none;
+}
+
+.footer a:hover,
+.enterEmail span:hover {
+  color: #ed0f0f;
+}
+
+.contacts ul li {
+  list-style: none;
+  margin-bottom: 13px;
+}
+
+.ourNewsLetter p {
+  text-transform: none;
+  font-size: 15px;
+  line-height: 26px;
+  width: 333px;
+  margin-bottom: 19px;
+}
+
+.enterEmail {
+  background-color: whitesmoke;
+  width: 333px;
+  
+  height: 40px;
+  overflow: hidden;
+  padding-left: 18px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 19px;
+}
+
+.enterEmail input {
+  height: 100%;
+  width: 85%;
+  outline: none;
+  border: 0px;
+  background-color: transparent;
+  font-size: 17px;
+}
+
+.enterEmail span {
+  cursor: pointer;
+  font-size: 28px;
+  color: #000;
+  transition: .2s;
+}
+
+.playAppStore{
+  display: flex;
+  gap: 15px;
+}
+
+/* social media in footer */
+.socialMediaAndCards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+}
+
+.socialMediaLogos a{
+  margin-right: 16px;
+  font-size: 20px;
+}
+
+.pamentCards img{
+  margin-right: 10px;
+}
+
+/* go to top */
+.goToTop{
+  position: fixed;
+  bottom: 80px;
+  right: 60px;
+  z-index: 100;
+  cursor: pointer;
+  background-color: white;
+  padding: 10px;
+  color: #ed0f0f;
+  transition: .4s;
+  font-size: 23px;
+  border: solid 1px #ed0f0f;
+  border-radius: 5px;
+
+}
