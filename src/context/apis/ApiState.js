@@ -11,7 +11,7 @@ const ApiState = (props) => {
     const [team, setteam] = useState();
     const [ourBlog, setourBlog] = useState();
     const [cartNum, setCartNum] = useState(0);
-    const [allProducts, setAllProducts] = useState([]);
+    // const [allProducts, setAllProducts] = useState([]);
 
 
     useEffect(() => {
