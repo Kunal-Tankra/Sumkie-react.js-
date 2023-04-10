@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Sumkie-react.js-/static/css/main.43c48fe3.css",
+    "main.js": "/Sumkie-react.js-/static/js/main.703593e6.js",
+    "static/js/787.85a40384.chunk.js": "/Sumkie-react.js-/static/js/787.85a40384.chunk.js",
+    "static/media/slick.svg": "/Sumkie-react.js-/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Sumkie-react.js-/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Sumkie-react.js-/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Sumkie-react.js-/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Sumkie-react.js-/index.html",
+    "main.43c48fe3.css.map": "/Sumkie-react.js-/static/css/main.43c48fe3.css.map",
+    "main.703593e6.js.map": "/Sumkie-react.js-/static/js/main.703593e6.js.map",
+    "787.85a40384.chunk.js.map": "/Sumkie-react.js-/static/js/787.85a40384.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43c48fe3.css",
+    "static/js/main.703593e6.js"
+  ]
+}
